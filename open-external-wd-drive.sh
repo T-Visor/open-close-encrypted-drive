@@ -16,3 +16,6 @@ cryptsetup open $DEVICE $NAME
 
 # mount the drive
 mount $MAPPED_NAME $MOUNT_LOCATION 
+
+# display where the drive is mounted to
+lsblk | grep $NAME
